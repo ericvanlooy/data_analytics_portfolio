@@ -2,6 +2,7 @@
 Graduate project methodology
 
 DATA COLLECTION
+
 5 CSV files (1 per year: 2018-2022) of following MAIN datasets:
 - collisions
 - casualties
