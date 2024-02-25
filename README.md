@@ -98,14 +98,28 @@ All files were connected through a relationship network (see Tableau Connections
 
 DATA EXPLORATION AND ANALYSIS
 
-Not all Dimensions and Measures ended up as part of the project
+Not all Dimensions and Measures ended up as part of the project. This was partly because some dimensions/measures and values yielded too many null values, and some because their granularity of detail merit more attention at a later stage as part of a bigger portfolio project, for instance focus on collision locations (junction locations, vicinity to traffic signals/pedestrian crossing facilities).
+The main focus dimension areas in this portfolio project were:
+- Collisions: Times of Day, Days of Week, Road Types, Severity Levels, Weather and Road Surface Conditions
+- Casualties: Times of Day, Days of Week, Road Types, Severity Levels, Casualty Types, Weather, Casualty Age Aroups
+- Vehicles: Vehicle Types, Vehicle Age Groups, Driver Types, Driver Age Groups, Impact Areas
 
-[more work required]
+Regarding measures, available collision/casualty/vehicle numbers were used across the vizzes, and would be used for the creation of calculated fields
 
 CALCULATION AND AGGREGATION
 
-[more work required]
+In order to get more data out of readily available source dimensions and measures, the following calculated fields were added:
+- 90 measure-derived calculations 
+	- Aggregations
+ 	- (Grand) Totals
+ 	- Chart Elements
+- 44 dimension-derived string-based calculations
+  	- 27 calculations used as Chart Elements 
+  	- 17 calculations used for Grouping
+ 
+DATA VISUALISATION
 
-DATA VISUALIZATION
+5 dashboards were added, containing: a line chart, a custom bar chart, 2 heat maps, a histogram, a radial chart, a scatter plot, and 3 tables + 3 bar charts embedded in tooltips
+The main focus here was to showcase my technical ability in Tableau, using parameters and calculated fields, custom icons, worksheet layering, and even a bit of content creation.
 
-[more work required]
+The project remains a work in progress, where user focus will play a larger role (lay-out, usability, full relevancy)
