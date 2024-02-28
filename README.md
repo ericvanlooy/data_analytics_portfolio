@@ -34,7 +34,7 @@ Assumptions and executive decisions:
 	LH​ is the length of the roads managed by the Heathrow Airport Highway Authority, which I estimated to be 27.1 miles in my previous answer
 	LL​ is the length of the roads in the London region, which I estimated to be 6,000 miles based on this source
 
-NOTE: Changes 3A and 3B were reversed at a later stage to complications created during discrete measure calculations
+NOTE: Changes 3A and 3B were reversed at a later stage due to complications created during discrete measure calculations
 
 ADDITIONAL DATA CREATION
 1. Radial heatmap X and Y coordinates
