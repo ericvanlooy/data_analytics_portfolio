@@ -1,0 +1,14 @@
+﻿Code,accident_severity,day_of_week,first_road_class,road_type,junction_detail,junction_control,second_road_class,pedestrian_crossing_human_control,pedestrian_crossing_physical_facilities,light_conditions,weather_conditions,road_surface_conditions,special_conditions_at_site,carriageway_hazards,urban_or_rural_area,did_police_officer_attend_scene_of_accident,trunk_road_flag
+-1,,,Missing/Out of range data,Missing/Out of range data,Missing/Out of range data,Missing/Out of range data,Missing/Out of range data,Missing/Out of range data,Missing/Out of range data,Missing/Out of range data,Missing/Out of range data,Missing/Out of range data,Missing/Out of range data,Missing/Out of range data,Missing/Out of range data,Missing/Out of range data,Missing/Out of range data
+0,,,,,Not at junction or within 20 metres,Not at junction or within 20 metres,Not at junction or within 20 metres,None within 50 metres ,No physical crossing facilities within 50 metres,,,,None,None,,,
+1,Fatal,Sunday,Motorway,Roundabout,Roundabout,Authorised person,Motorway,Control by school crossing patrol,Zebra,Daylight,Fine no high winds,Dry,Auto traffic signal - out,Vehicle load on road,Urban,Yes,Trunk (Roads managed by Highways England)
+2,Serious,Monday,A(M),One way street,Mini-roundabout,Auto traffic signal,A(M),Control by other authorised person,,,Raining no high winds,Wet or damp,Auto signal part defective,Other object on road,Rural,No,Non-trunk
+3,Slight,Tuesday,A,Dual carriageway,T or staggered junction,Stop sign,A,,,,Snowing no high winds,Snow,Road sign or marking defective or obscured,Previous accident,Unallocated,No - accident was reported using a self completion  form (self rep only),
+4,,Wednesday,B,,,Give way or uncontrolled,B,,"Pelican, puffin, toucan or similar non-junction pedestrian light crossing",Darkness - lights lit,Fine + high winds,Frost or ice,Roadworks,Dog on road,,,
+5,,Thursday,C,,Slip road,,C,,Pedestrian phase at traffic signal junction,Darkness - lights unlit,Raining + high winds,Flood over 3cm. deep,Road surface defective,Other animal on road,,,
+6,,Friday,Unclassified,Single carriageway,Crossroads,,Unclassified,,,Darkness - no lighting,Snowing + high winds,Oil or diesel,Oil or diesel,Pedestrian in carriageway - not injured,,,
+7,,Saturday,,Slip road,More than 4 arms (not roundabout),,,,Footbridge or subway,Darkness - lighting unknown,Fog or mist,Mud,Mud,Any animal in carriageway (except ridden horse),,,
+8,,,,,Private drive or entrance,,,,Central refuge,,Other,,,,,,
+9,,,,Unknown,Other junction,Unknown,,Unknown,Unknown,,Unknown,Unknown,Unknown,Unknown,,,
+12,,,,One way street/Slip road,,,,,,,,,,,,,
+99,,,,,Unknown,,,,,,,,,,,,

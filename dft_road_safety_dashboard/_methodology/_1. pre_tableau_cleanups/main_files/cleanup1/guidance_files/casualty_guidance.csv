@@ -1,0 +1,34 @@
+﻿Code,casualty_class,sex_of_casualty,age_band_of_casualty,casualty_severity,pedestrian_location,pedestrian_movement,car_passenger,bus_or_coach_passenger,pedestrian_road_maintenance_worker,casualty_type,casualty_home_area_type,casualty_imd_decile
+-1,,Missing/Out of range data,Missing/Out of range data,,Missing/Out of range data,Missing/Out of range data,Missing/Out of range data,Missing/Out of range data,Missing/Out of range data,Missing/Out of range data,Missing/Out of range data,Missing/Out of range data
+0,,,,,Not a Pedestrian,Not a Pedestrian,Not car passenger,Not a bus or coach passenger,No / Not applicable,Pedestrian,,
+1,Driver or rider,Male,0 - 5,Fatal,Crossing on pedestrian crossing facility,Crossing from driver's nearside,Front seat passenger,Boarding,Yes,Cyclist,Urban area,Most deprived 10%
+2,Passenger,Female,6 - 10,Serious,Crossing in zig-zag approach lines,Crossing from nearside - masked by parked or stationary vehicle,Rear seat passenger,Alighting,Not Known,Motorcycle 50cc and under rider or passenger,Small town,More deprived 10-20%
+3,Pedestrian,,11 - 15,Slight,Crossing in zig-zag exit lines,Crossing from driver's offside,,Standing passenger,Probable,Motorcycle 125cc and under rider or passenger,Rural,More deprived 20-30%
+4,,,16 - 20,,Crossing elsewhere within 50m. of pedestrian crossing,Crossing from offside - masked by  parked or stationary vehicle,,Seated passenger,,Motorcycle over 125cc and up to 500cc rider or  passenger,,More deprived 30-40%
+5,,,21 - 25,,"In carriageway, crossing elsewhere","In carriageway, stationary - not crossing  (standing or playing)",,,,Motorcycle over 500cc rider or passenger,,More deprived 40-50%
+6,,,26 - 35,,On footway or verge,"In carriageway, stationary - not crossing  (standing or playing) - masked by parked or stationary vehicle",,,,,,Less deprived 40-50%
+7,,,36 - 45,,"On refuge, central island or central reservation","Walking along in carriageway, facing traffic",,,,,,Less deprived 30-40%
+8,,,46 - 55,,"In centre of carriageway - not on refuge, island or central reservation","Walking along in carriageway, back to traffic",,,,Taxi/Private hire car occupant,,Less deprived 20-30%
+9,,Unknown,56 - 65,,"In carriageway, not crossing",Unknown or other,Unknown,Unknown,,Car occupant,,Less deprived 10-20%
+10,,,66 - 75,,Unknown or other,,,,,Minibus (8 - 16 passenger seats) occupant,,Least deprived 10%
+11,,,Over 75,,,,,,,Bus or coach occupant (17 or more pass seats),,
+16,,,,,,,,,,Horse rider,,
+17,,,,,,,,,,Agricultural vehicle occupant,,
+18,,,,,,,,,,Tram occupant,,
+19,,,,,,,,,,Van / Goods vehicle (3.5 tonnes mgw or under) occupant,,
+20,,,,,,,,,,Goods vehicle (over 3.5t. and under 7.5t.) occupant,,
+21,,,,,,,,,,Goods vehicle (7.5 tonnes mgw and over) occupant,,
+22,,,,,,,,,,Mobility scooter rider,,
+23,,,,,,,,,,Electric motorcycle rider or passenger,,
+90,,,,,,,,,,Other vehicle occupant,,
+97,,,,,,,,,,Motorcycle - unknown cc rider or passenger,,
+98,,,,,,,,,,Goods vehicle (unknown weight) occupant,,
+99,,,,,,,,,,Unknown vehicle type (self rep only),,
+103,,,,,,,,,,Motorcycle - Scooter (1979-1998),,
+104,,,,,,,,,,Motorcycle (1979-1998),,
+105,,,,,,,,,,Motorcycle - Combination (1979-1998),,
+106,,,,,,,,,,Motorcycle over 125cc (1999-2004),,
+108,,,,,,,,,,Taxi (excluding private hire cars) (1979-2004),,
+109,,,,,,,,,,Car (including private hire cars) (1979-2004),,
+110,,,,,,,,,,Minibus/Motor caravan (1979-1998),,
+113,,,,,,,,,,Goods over 3.5 tonnes (1979-1998),,

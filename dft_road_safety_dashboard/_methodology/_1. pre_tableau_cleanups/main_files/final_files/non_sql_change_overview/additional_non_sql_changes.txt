@@ -1,0 +1,7 @@
+1. XLOOKUP-based add-in of "region" field in collisions
+2. XLOOKUP-based geo name harmonisation between source file local authority names and LSOA codes
+2. Add-in of manual row count markers for each file
+3. HOUR()-based add-in of the "hour block" field for Tableau match-up with radial heatmap
+4. A Find/Replace of an SQL cleanup oversight (removing the number -1)
+5. TEXTSPLIT()-based split of the generic_vehicle_make_model field into separate make and model fields
+

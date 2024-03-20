@@ -1,0 +1,102 @@
+Graduate project methodology
+
+DATA COLLECTION
+15 CSV files (1 per year: 2018-2022) of following 3 MAIN datasets:
+- collisions
+- casualties
+- vehicles
+
+1 datasheet summarising road lengths per road type and local authority
+- Road_Length_by_Local_authority_and_Road_Type
+1 datasheet summarising traffic volumes per local authority over time (2018-2022)
+- LA_vehicle_miles 
+1 GEO Legend combining hierarchies of local authorities, police forces and regions
+- GEO_legend 
+2 DVLA datasheets on registered vehicle and license holder numbers
+- dvla_licence_holder_stats
+- dvla_vehicle_stats
+
+Assumptions and decisions:
+1. Road length data fixed across time due to small changes in length numbers over time
+2. Road length for Heathrow authority is based on a Bing Copilot calculation
+3. Traffic Volume assumptions were made for a number of local authorities that underwent changes within this period 
+	A. North and West Northamptionshire: missing volumes for 2018-2020 were added based on percentage difference between two authorities in 2021-2022 and extrapolated from 		Northamptionshire authority in 2018-2020 
+	B. Missing volumes for Bournemouth, 	Christchurch and Poole on one hand and Dorset on the other for 2018 were done in a similar fashion as above 
+	C. Volumes for Heathrow are an extrapolation of volumes of Greater London, based on a formula to estimate the vehicle miles travelled on the roads managed by the Heathrow Airport 	Highway Authority for each year:
+		VMTH​=VMTL​×(LH/​LHL) where:
+
+		1. VMTH​ is the vehicle miles travelled on the roads managed by the Heathrow Airport Highway Authority 
+		2. VMTL​ is the vehicle miles travelled in the London region 
+		3. LH​ is the length of the roads managed by the Heathrow Airport Highway Authority, which I estimated to be 27.1 miles in my previous answer 
+		4. LL​ is the length of the roads in the London region, which I estimated to be 6,000 miles based on this source
+
+NOTE: Changes 3A and 3B were reversed at a later stage due to complications created during discrete measure calculations
+
+ADDITIONAL DATA CREATION
+Radial heatmap X and Y coordinates 
+Attribution: https://wjsutton.shinyapps.io/radial_heatmap/ Tutorial: https://www.youtube.com/watch?app=desktop&v=j4hq6pQ4Lvw
+Power Query-based transformations of existing data in the Vehicles dataset
+
+EXCEL-BASED PREP WORK
+1. Simple file mergers per main dataset category (collisions, casualties, vehicles)
+2. Local authority name harmonisation
+3. Hierarchy alignment
+- Regions, to
+- Highway Authorities, to
+- Local Authority Districts
+4. Data Legend reformatting in preparation of SQL Import
+
+SQL-BASED PREP WORK
+1. Import of merged datasets
+2. Import of data legend tables
+
+SQL CLEANUPS
+The data legends were originally set to be applied with Excel XLOOKUPS, with 1 lookup_array to match the lookup values in the collisions/casualties/vehicles, and various return arrays to replace the lookup values with. However, the exercise was done in DBeaver to speed up progress.
+SQL queries can be found in the various cleanup folders in Methodology_1. pre_tableau_cleanups\main_files
+
+After this first large cleanup round, smaller cleanups took place: 
+A. double whitespace removals in all 3 tables 
+B. A value merger in vehicles > journey_purpose_of_driver, where the values 'Other' and 'Not known' were merged with 'Other/Not known' 
+C. Some modifications were made to the collisions table 
+	1. Road categories and numbers were merged into new fields 
+	2. An unwanted value from second_road was removed due to being verbose 
+	3. original 'road' fields were dropped (in hindsight, the class fields should have been kept)
+
+ADDITIONAL CLEANUPS/CHANGES 
+See: Methodology_1. pre_tableau_cleanups\main_files\final_files\non_sql_change_overview Methodology_1. pre_tableau_cleanups\collateral_files
+
+TABLEAU CONNECTIONS 
+All files were connected through a relationship network (see Tableau Connections.png)
+
+DATA EXPLORATION AND ANALYSIS
+Not all Dimensions and Measures ended up as part of the project. This was partly because some dimensions/measures and values yielded too many null values, and some because their granularity of detail merit more attention at a later stage as part of a bigger portfolio project, for instance focus on collision locations (junction locations, vicinity to traffic signals/pedestrian crossing facilities). The main focus dimension areas in this portfolio project were:
+
+Collisions: Times of Day, Days of Week, Road Types, Severity Levels, Weather and Road Surface Conditions
+Casualties: Times of Day, Days of Week, Road Types, Severity Levels, Casualty Types, Weather, Casualty Age Aroups
+Vehicles: Vehicle Types, Vehicle Age Groups, Driver Types, Driver Age Groups, Impact Areas
+Regarding measures, available collision/casualty/vehicle numbers were used across the vizzes, and would be used for the creation of calculated fields
+
+CALCULATION AND AGGREGATION
+In order to get more data out of readily available source dimensions and measures, the following calculated fields were added:
+
+90 measure-derived calculations
+Aggregations
+(Grand) Totals
+Chart Elements
+44 dimension-derived string-based calculations
+27 calculations used as Chart Elements
+17 calculations used for Grouping
+DATA VISUALISATION
+
+5 dashboards were added, containing: a line chart, a custom bar chart, 2 heat maps, a histogram, a radial chart, a scatter plot, and 3 tables + 3 bar charts embedded in tooltips The main focus here was to showcase my technical ability in Tableau, using parameters and calculated fields, custom icons, worksheet layering, and even a bit of content creation.
+
+The project remains a work in progress, where user focus will play a larger role (lay-out, usability, full relevancy)
+
+
+
+
+
+
+  
+
+
