@@ -86,11 +86,15 @@ Chart Elements
 44 dimension-derived string-based calculations
 27 calculations used as Chart Elements
 17 calculations used for Grouping
-DATA VISUALISATION
 
-5 dashboards were added, containing: a line chart, a custom bar chart, 2 heat maps, a histogram, a radial chart, a scatter plot, and 3 tables + 3 bar charts embedded in tooltips The main focus here was to showcase my technical ability in Tableau, using parameters and calculated fields, custom icons, worksheet layering, and even a bit of content creation.
+DATA VISUALISATION
+5 dashboards were added, containing: a line chart, a custom bar chart, 2 heat maps, a histogram, a radial chart, a scatter plot, and 3 tables + 3 bar charts embedded in tooltips 
+The main focus here was to showcase my technical ability in Tableau, using parameters and calculated fields, custom icons, worksheet layering, and even a bit of content creation.
 
 The project remains a work in progress, where user focus will play a larger role (lay-out, usability, full relevancy)
+
+LATEST ADDITIONS
+1. "UK events" calendar for line chart tooltip
 
 
 
