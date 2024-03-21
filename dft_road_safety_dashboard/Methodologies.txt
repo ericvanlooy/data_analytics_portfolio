@@ -4,7 +4,8 @@ DATA REQUIREMENTS
 Requirements were primarily self-imposed
 - Objective: 
 	1. build a self-serve Collision Dashboard 
-	2. Wider view of data than DfT's Casualty Dashboard (including Collisions and Vehicles)
+	2. Wider scope of data than DfT's Casualty Dashboard (including Collisions and Vehicles)
+	3. No Highlighted Facts
 - Analysis: Descriptive (What happened?)
 	1. Trends/Patterns: Timeline Dashboard
 	2. Exploratory Analysis: Casualty and Vehicle Dashboard
