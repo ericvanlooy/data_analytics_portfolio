@@ -2,8 +2,15 @@ Graduate project methodology
 
 DATA REQUIREMENTS
 Requirements were primarily self-imposed
-- Objective: 1. build a self-serve Collision Dashboard 2. Dive deeper than DfT's Casualty Dashboard
-- Analysis: Descriptive (What happened? - trends and patterns)
+- Objective: 
+	1. build a self-serve Collision Dashboard 
+	2. Wider view of data than DfT's Casualty Dashboard (including Collisions and Vehicles)
+- Analysis: Descriptive (What happened?)
+	1. Trends/Patterns: Timeline Dashboard
+	2. Exploratory Analysis: Casualty and Vehicle Dashboard
+	3. Regression Analysis: Scatter Plot Dashboard
+	4. Technical Challenge: Bar Chart Dashboard
+	
 - Target Audience: Peers
 
 DATA COLLECTION
