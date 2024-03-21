@@ -1,5 +1,10 @@
 Graduate project methodology
 
+DATA REQUIREMENTS
+Requirements were primarily self-imposed
+- Objective: 1. build a self-serve Collision Dashboard 2. Dive deeper than DfT's Casualty Dashboard
+- Analysis: Descriptive (What happened? - trends and patterns)
+
 DATA COLLECTION
 15 CSV files (1 per year: 2018-2022) of following 3 MAIN datasets:
 - collisions
